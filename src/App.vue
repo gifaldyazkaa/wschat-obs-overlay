@@ -12,7 +12,6 @@ useWsChat('lSsuq6xm9uY', data => {
 
 <template>
     <div>
-        <h1 class="text-3xl text-center my-4 fotn-bold">Observing Live Chat Kobo Kanaeru</h1>
         <div
             v-for="chat in chats"
             class="block bg-white text-black font-medium rounded-2xl rounded-bl-none px-4 py-2 mb-2"
