@@ -14,7 +14,7 @@ useWsChat('3pzW2HqKn80', data => {
     <div>
         <div
             v-for="chat in chats"
-            class="block bg-white text-black font-medium rounded-2xl rounded-bl-none px-4 py-2 mb-2"
+            class="bg-white text-black font-medium rounded-2xl rounded-bl-none w-96 px-4 py-2 mb-2"
         >
             <div class="font-semibold inline-flex flex-row items-center align-middle">
                 <img
