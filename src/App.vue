@@ -4,7 +4,7 @@ import useWsChat from './scripts/useWsChat';
 
 const chats = ref<any[]>([]);
 
-useWsChat('lSsuq6xm9uY', data => {
+useWsChat('3pzW2HqKn80', data => {
     if (chats.value.length >= 10) chats.value.shift();
     chats.value.push(data);
 });
