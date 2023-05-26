@@ -2,7 +2,17 @@
 export default {
     content: ['./index.html', './src/**/*.{js,ts,vue}'],
     theme: {
-        extend: {},
+        extend: {
+            keyframes: {
+                chat: {
+                    '0%': { transform: 'translateX(-100%)', opacity: '0' },
+                    '100%': { transform: 'translateX(-0%)', opacity: '1' },
+                },
+            },
+            animation: {
+                chat: 'chat .3s forwards',
+            },
+        },
     },
     plugins: [],
 };

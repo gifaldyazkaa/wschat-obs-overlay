@@ -4,17 +4,18 @@ import useWsChat from './scripts/useWsChat';
 
 const chats = ref<any[]>([]);
 
-useWsChat('3pzW2HqKn80', data => {
-    if (chats.value.length >= 10) chats.value.shift();
+useWsChat('UJeQNZ0m1Q0', data => {
+    if (chats.value.length >= 20) chats.value.shift();
     chats.value.push(data);
 });
 </script>
 
 <template>
-    <div>
+    <div class="flex flex-col justify-end h-screen p-10">
         <div
             v-for="chat in chats"
-            class="bg-white text-black font-medium rounded-2xl rounded-bl-none w-96 px-4 py-2 mb-2"
+            class="bg-white text-black font-medium rounded-2xl rounded-bl-none w-96 px-4 py-2 mb-2 animate-chat"
+            :key="chat.id"
         >
             <div class="font-semibold inline-flex flex-row items-center align-middle">
                 <img
@@ -43,5 +44,3 @@ useWsChat('3pzW2HqKn80', data => {
         </div>
     </div>
 </template>
-
-<style scoped></style>
