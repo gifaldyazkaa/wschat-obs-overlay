@@ -1,18 +1,28 @@
-# Vue 3 + TypeScript + Vite
+# 💬 WebSocket Chat Overlay for OBS
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+YouTube Livestream chat overlay in your OBS, streamlined.
 
-## Recommended IDE Setup
+## UNMAINTAINED.
 
--   [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Sorry. You may ask why, but it's happened because something unwanted happens.
 
-## Type Support For `.vue` Imports in TS
+If you want to know, this thing is created especially for [**Choco Latte**](https://youtube.com/@ChocoLatteCh), a Virtual YouTuber based in Indonesia. Now this project is half way from finished progress, but she suddenly decides to stopping her process as Virtual YouTuber & Virtual Streamer. So, I decided to stop this project too.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+> a short message:
+> 
+> Farewell and thank you, Choco. I will always waiting for your comeback. :sob:
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+[**Read the official news!**](https://www.facebook.com/catchocolattech/posts/pfbid0TRbgyUkEHkuB2YhFHhrWyNkXbG8mYM3KR2uLfDySF24mN859QPt6inqynoWf4AJ5l)
 
-1. Disable the built-in TypeScript Extension
-    1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+## Using
+
+1. Create new Browser Source in your OBS,
+2. Fill the URL section with this website URL,
+3. Add `?liveId` or `?channelId` parameter to the end of the URL and fill it using your own YouTube Live ID or Channel ID,
+4. Set the width and height of the source within your preferences,
+5. Set some custom CSS if necessary,
+6. Done.
+
+## License
+
+This project is licensed under [MIT License](./LICENSE).
